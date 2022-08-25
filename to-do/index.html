@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title> Shipper - to do list </title>
+</head>
+<body>
+    <a href="../index.html" class="twenty" id="back">To Home</a>
+    <div class="todocon">
+        <p><span class="lg" style="font-weight: bold;">Today</span> <span id="showdate" class="grey sm"> Wednesday 2022 </span></p>
+        <a href="#" id="add" class="md" style="margin-left: 30px;"><i class="fa-duotone fa-plus"></i> Add Task </a>
+
+        <div class="tasks" id="tasker">
+            <form id="addForm">
+                <div id="addTask">
+                    <input type="text" id="addTaskName" name="addTaskName" placeholder="Task name" autocomplete="off">
+                    <input type="text" id="addTaskDesc" name="addTaskDesc" placeholder="Task description" autocomplete="off">
+                    <span><button id="cancelAddTask">Cancel</button><button id="addTaskButton" type="submit">add</button></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<script src="https://kit.fontawesome.com/53592410e5.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

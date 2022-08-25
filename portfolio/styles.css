@@ -1,0 +1,83 @@
+* {
+    margin: 0;    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial;
+    color: #444;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+} @font-face {
+    font-family: round;
+    src: url(Typo_Round_Light_Demo.otf);
+} html {
+    scroll-behavior: smooth;
+} ::-webkit-scrollbar {
+    width: 0;
+}
+
+
+.head {
+    width: 100%;    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    margin-bottom: 30vh;
+} .fifty {
+    font-size: 80px;
+} .twenty {
+    font-size: 50px;
+    width: 500px;
+    text-align: start;
+} .sm {
+    font-size: 15px;
+} .md {
+    font-size: 25px;
+} .bg {
+    position: absolute;
+    inset: 0;
+    opacity: 10%;
+    height: 100%;
+    width: auto;
+    margin: auto;
+} #back {
+    position: fixed;
+    top: 3vh;
+    left: 5vh;
+    color: lightgrey;
+    transition: 0.3s;
+    z-index: 3;
+} #back:hover {
+    color: #444;
+}
+
+.projects {
+    width: 100%;    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} .card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 750px;
+    height: 200px;
+    margin-bottom: 10vh;
+} #card-img {
+    border-radius: 20px;
+} .md, .sm {
+    margin: 0 20px;
+} .md {
+    margin-bottom: 20px;
+}
+
+.footer {
+    width: 100%;    height: 30vh;
+    text-align: center;
+    line-height: 30vh;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}

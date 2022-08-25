@@ -1,0 +1,251 @@
+* {
+    margin: 0;    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial;
+    color: #444;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+} @font-face {
+    font-family: round;
+    src: url(Typo_Round_Light_Demo.otf);
+} html {
+    scroll-behavior: smooth;
+} ::-webkit-scrollbar {
+    width: 0;
+}
+
+.header {
+    width: 100%;    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30vh;
+} .subhead {
+    width: 50vw;    height: 100vh;
+    display: flex;    flex-direction: column;
+    justify-content: center; align-items: center;
+    position: relative; row-gap: 30px;
+} nav {
+    width: 50%;    height: 10vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+
+    position: fixed;
+    right: 0; top: 0;
+    z-index: 5;
+} nav ul {
+    width: 100%; height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} nav ul a:hover {
+    color: lightgrey;
+} .slogan {
+    width: 75%;
+
+    font-size: 50px;
+    text-align: right;
+    font-weight: bold;
+    color: #777;
+} #orderhead {
+    padding: 7px 15px;
+    color: white;
+    outline: none;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    background-color: #555;
+    border-radius: 20px;
+    transform: translateX(195px);
+} #orderhead:hover {
+    color: #666;
+    border: 2px solid #666;
+    background-color: white;
+} #decorBox {
+    width: 370px;   height: 100px;
+    background-color: #E6D7BF;
+    position: absolute;
+    right: 0;    bottom: 44%;
+    z-index: -1;
+} .imghome1 {
+    background-image: url(./imgs/kenzie-kraft.jpg);
+    background-size: cover;
+
+    width: 50vw;
+    height: 100vh;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+#about {
+    height: 100vh; width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+} #aboutimg {
+    width: 750px;   height: 750px;
+    opacity: 10%;
+
+    position: absolute; top: 0; bottom: 0;
+} .title {
+    font-size: 50px;
+
+} .aboutus {
+    width: 30%;
+    text-align: center;
+}
+
+
+#contact {
+    width: 100%;    height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3vh;
+} #contact .title {
+    font-size: 50px;
+    letter-spacing: 1px;
+    transform: translateY(-125px);
+} #contactBox {
+    width: 500px;
+    height: 300px;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+} #contact input {
+    width: 100%;
+    height: 40px;
+    transition: 0.3s;
+    border: 2px solid #E6D7BF;
+    border-radius: 10px;
+    padding: 0 10px;
+} #submit {
+    padding: 7px 15px;
+    color: white;
+    background-color: #cfb082;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    align-self: start;
+} #submit:hover {
+    border: 2px solid #cfb082;
+    background-color: white;
+    color: #cfb082;
+} #contactbox {
+    position: absolute;
+    left: 0;
+    top: 32%;
+    width: 37%;    height: 50px;
+    background-color: #E6D7BF;
+    z-index: -1;
+}
+
+
+#footer {
+    width: 100%;    height: 70vh;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding: 100px;
+} #footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+
+    list-style: none;
+    margin-bottom: 30px;
+} #footer ul li#head {
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: bold;
+} #footer ul li {
+    color: lightgrey;
+    font-size: 15px;
+    margin-bottom: 5px;
+} #footer #copyright {
+    transform: translateY(200px);
+} #uelBox {
+    height: 100px;  width: 100%;
+
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    column-gap: 50px;
+} #flink {
+    color: lightgrey;
+} #footer a {
+    transition: 0.3s;
+    color: lightgrey;
+} #footer a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+
+#plansBlur {
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    inset: 0;
+    z-index: 2000;
+
+    width: 100%;
+    height: 100vh;
+
+    backdrop-filter: blur(10px);
+} #plansBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    position: absolute;
+
+    width: 70vw;
+    height: 50vh;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 5px solid grey;
+} #plansBox table {
+    width: 100%;
+    height: 100%;
+    text-align: center; 
+} #fakeButton {
+    color: white;
+    padding: 10px 20px;
+    background-color: lightblue;
+    border-radius: 7px;
+} #plansBlur.active {
+    display: flex;
+} #backer {
+    position: absolute;
+    z-index: 999;
+    right: 17%;
+    top: 27%;
+    font-size: 25px;
+}
+
+.activu {
+    color: lightgrey;
+}
